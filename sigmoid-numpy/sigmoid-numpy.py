@@ -1,6 +1,6 @@
 import numpy as np
 
-def sigmoid(x):
+def sigmoid(x): # convert the array into numpy array then apply the sigmoid formula 
     """
     Vectorized sigmoid function.
     """
