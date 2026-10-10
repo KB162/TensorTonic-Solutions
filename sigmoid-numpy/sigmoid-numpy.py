@@ -1,9 +1,11 @@
 import numpy as np
 
-def sigmoid(x): # convert the array into numpy array then apply the sigmoid formula 
+def sigmoid(x: list | float) -> np.ndarray | float:
     """
-    Vectorized sigmoid function.
+    Returns the sigmoid value for a scalar or each element of a list.
     """
-    x = np.array(x)
-    return 1 / (1 + np.exp(-x)) 
+    x = np.asarray(x , dtype=float)
+
+    return 1 / (1+np.exp(-x))
+    # Write code here
     pass
